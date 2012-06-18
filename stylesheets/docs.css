@@ -1,18 +1,34 @@
 @import url("http://fonts.googleapis.com/css?family=Numans");
 @import url("http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic");
+
+div.page.container {
+  position: fixed;
+  top: 50px;
+  bottom: 0px;
+  width: 980px;
+  overflow: auto;
+}
+
 div.api.container {
+  width: auto;
+  /*
   position: fixed;
   top: 50px;
   bottom: 20px;
+  */
 }
+
 div.api.container h1 {
   font-size: 1.5em;
-  margin-left: 20px;
+  margin-left: 25%;
+  padding-left: 15px;
 }
 div.api.container div.api.index {
+  /*
   -webkit-box-shadow: 1px 1px 1px 1px #000;
   box-shadow: 1px 1px 1px 1px #000;
   -webkit-border-radius: 2px;
+  */
   border-radius: 2px;
   background-color: #ccc;
   height: 570px;
@@ -20,16 +36,21 @@ div.api.container div.api.index {
   margin: 0;
 }
 div.api.container div.api.index .content {
+  width: 220px;
+  position: fixed;
+  top: 40px;
+  bottom: 0px;
+  background: #ccc;
+  height: auto;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 100%;
 }
 div.api.container div.api.index .content ul {
   margin: 0;
 }
 div.api.container div.api.index .content li {
   list-style-type: none;
-  padding: 0px 0px;
+  padding: 0px 1em;
 }
 div.api.container div.api.index .content li a:link,
 div.api.container div.api.index .content li a:visited {
@@ -40,14 +61,18 @@ div.api.container div.api.index .content li a:active {
   color: #00f;
 }
 div.api.container div.api.index .content li.type {
-  padding: 10px 0px 0px 0px;
+  /*padding: 10px 0px 0px 0px;*/
+  padding: 1em 1em 0;
+  font-size: 1.2em;
 }
 div.api.container div.api.index .content li.type.active {
   font-weight: bold;
 }
+/*
 div.api.container div.api.descriptions {
   height: 570px;
 }
+*/
 div.api.container div.api.descriptions .content {
   overflow-x: hidden;
   overflow-y: auto;
@@ -66,6 +91,8 @@ div.api.container div.api.descriptions .content h2 div {
   font-size: 0.8em;
 }
 div.api.container div.api.descriptions .content h3 {
+  padding: 0.5em 0;
+  margin: 1em 0 0;
   font-size: 1.1em;
   border-top: 1px groove #808080;
 }
